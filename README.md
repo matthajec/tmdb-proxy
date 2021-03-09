@@ -1,5 +1,5 @@
 # TMBD Proxy
-A simple express server that uses TMDB's database, meant to hide the API key from TMBD for (this)[https://github.com/matthajec/movie-search-rebuild] project.
+A simple express server that uses TMDB's database, meant to hide the API key from TMBD for [this](https://github.com/matthajec/movie-search-rebuild) project.
 
 
 ## Usage
