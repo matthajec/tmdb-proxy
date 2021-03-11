@@ -14,7 +14,7 @@ app.use(cors());
 
 // get this weeks trending movies
 app.get('/trending', (req, res) => {
-  fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.API_KEY}`)
+  fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.API_KEY}&page=${req.query.page}`)
     .then(res => res.json())
     .then(data => res.json(data));
 });
