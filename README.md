@@ -3,4 +3,4 @@ A simple express server that uses TMDB's database, meant to hide the API key fro
 
 
 ## Usage
-This API has 2 end points, one at ```/trending```, and the other at ```/search```. The tredning endpoint takes no parameters. The search enpoint takes the parameters ```query``` and ```page```. 
+This API has 2 end points, one at ```/trending```, and the other at ```/search```. The trending endpoint takes no parameters. The search enpoint takes the parameters ```query``` and ```page```. 
