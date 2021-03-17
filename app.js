@@ -4,6 +4,8 @@ const fetch = require('node-fetch');
 const rateLimit = require("express-rate-limit");
 const cors = require('cors');
 
+app.set('trust proxy' 1)
+
 // limit requests to 20 per minute
 app.use(rateLimit({
   windowMs: '60000',
