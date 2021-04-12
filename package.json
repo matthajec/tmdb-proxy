@@ -11,7 +11,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "pm2 start app.js",
+    "start": "pm2 start app.js -f",
     "dev": "nodemon app"
   },
   "keywords": [],
