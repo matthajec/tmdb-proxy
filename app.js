@@ -14,7 +14,7 @@ app.use(cors());
 
 // get this weeks trending movies
 app.get('/trending', (req, res) => {
-  fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.API_KEY}&page=${req.query.page}`)
+  fetch(`https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.API_KEY}&page=${encodeURIComponent(req.query.page)}`)
     .then(res => res.json())
     .then(data => res.json(data));
 });
@@ -22,7 +22,7 @@ app.get('/trending', (req, res) => {
 
 // perform a query
 app.get('/search', (req, res) => {
-  fetch(`https://api.themoviedb.org/3/search/movie?query=${req.query.query}&page=${req.query.page}&include_adult=false&api_key=${process.env.API_KEY}`)
+  fetch(`https://api.themoviedb.org/3/search/movie?query=${encodeURIComponent(req.query.query)}&page=${encodeURIComponent(req.query.page)}&include_adult=false&api_key=${process.env.API_KEY}`)
     .then(res => res.json())
     .then(data => res.json(data));
 });

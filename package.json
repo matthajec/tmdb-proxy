@@ -4,13 +4,14 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-rate-limit": "^5.2.6",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "pm2": "^4.5.6"
   },
   "name": "tmdb-api",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app",
+    "start": "pm2 start app.js",
     "dev": "nodemon app"
   },
   "keywords": [],
